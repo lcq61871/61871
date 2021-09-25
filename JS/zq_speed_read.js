@@ -122,7 +122,7 @@ function getspwzbody() {
             $.log(`${$.name}获取阅读: 成功, spwzbodys: ${bodyVal}`);
             $.msg($.name, `获取第一个阅读请求: 成功🎉`, ``)
         }
-    }else if ($request.url.match(/\/user.youth.cn\/v\?timestamp/)) {
+    }else if ($request.url.match(/\/user.youth.cn\/h5\/fastAppWeb\/commentDetaile\/index.html\?timestamp/)) {
         bodyVal1 = $request.url.split('?')[1]
         bodyVal = bodyVal1.split('&')[1]
           console.log(bodyVal)
