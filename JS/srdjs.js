@@ -17,8 +17,8 @@ const $ = API("birthday", true);
 const title = "🐣破壳日🐣";
 
 $.config = {
-  username: "张燕", // 姓名
-  birthday: "1996.09.19", // 生日日期
+  username: "张燕", // 姓名 
+  birthday: "1996,09,19", // 生日日期
   physiologicalDefault: "", // 最近一次来周期时间
   physiologicalCycle: "", // 下一次周期
   nongli: true, // 农历生日
