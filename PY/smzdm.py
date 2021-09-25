@@ -52,56 +52,26 @@ def telegram_bot(title, content):
         print("\n")
         bot_token = TG_TOKEN
         user_id = TG_USER_ID
-        if (TG_BOT_TOKEN && TG_USER_ID) {
-      const options = {
-        url: `https://${TG_API_HOST}/bot${TG_BOT_TOKEN}/sendMessage`,
-        body: `chat_id=${TG_USER_ID}&text=${text}\n\n${desp}&disable_web_page_preview=true`,
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        timeout,
-      };
-      if (TG_PROXY_HOST && TG_PROXY_PORT) {
-        const tunnel = require('tunnel');
-        const agent = {
-          https: tunnel.httpsOverHttp({
-            proxy: {
-              host: TG_PROXY_HOST,
-              port: TG_PROXY_PORT * 1,
-              proxyAuth: TG_PROXY_AUTH,
-            },
-          }),
-        };
-        Object.assign(options, { agent });
-      }
-      $.post(options, (err, resp, data) => {
-        try {
-          if (err) {
-            console.log('telegram发送通知消息失败！！\n');
-            console.log(err);
-          } else {
-            data = JSON.parse(data);
-            if (data.ok) {
-              console.log('Telegram发送通知消息成功🎉。\n');
-            } else if (data.error_code === 400) {
-              console.log(
-                '请主动给bot发送一条消息并检查接收用户ID是否正确。\n',
-              );
-            } else if (data.error_code === 401) {
-              console.log('Telegram bot token 填写错误。\n');
-            }
-          }
-        } catch (e) {
-          $.logErr(e, resp);
-        } finally {
-          resolve(data);
-        }
-      });
-    } else {
-      resolve();
-    }
-  });
-}
+        if not bot_token or not user_id:
+            print("tg服务的bot_token或者user_id未设置!!\n取消推送")
+            return
+        print("tg服务启动")
+        url = f"https://api.telegram.org/bot${TG_TOKEN}/sendMessage"
+
+        headers = {'Content-Type': 'application/x-www-form-urlencoded'}
+        payload = {'chat_id': str(TG_USER_ID), 'text': f'{title}\n\n{content}', 'disable_web_page_preview': 'true'}
+        proxies = None
+
+        try:
+            response = requests.post(url=url, headers=headers, params=payload, proxies=proxies).json()
+        except:
+            print('推送失败！')
+        if response['ok']:
+            print('推送成功！')
+        else:
+            print('推送失败！')
+    except Exception as e:
+        print(e)
 
 
 class SignBot(object):
