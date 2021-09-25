@@ -168,7 +168,7 @@ async function getEveryDaySay() {
 
 async function getCalendarJs() {
   const response = await $.http.get({
-    url: "https://gitee.com/domp/jnc_lunch/raw/master/public/calendar.js",
+    url: "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JS/calendar.js",
   });
   return response.body;
 }
