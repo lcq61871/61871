@@ -18,10 +18,10 @@ const title = "🐣破壳日🐣";
 
 $.config = {
   username: "张燕", // 姓名 
-  birthday: "1996-09-19", // 生日日期
+  birthday: "1996-08-07", // 生日日期
   physiologicalDefault: "", // 最近一次来周期时间
   physiologicalCycle: "", // 下一次周期
-  nongli: false, // 农历生日
+  nongli: true, // 农历生日
   eday: "",
   loveWords: true,
   isLeapMonth: false, //如果是农历闰月第四个参数赋值true即可
