@@ -1,3 +1,4 @@
+// @grant    require
 const $ = new Env('金手指阅读');
 let status;
 status = (status = ($.getval("jszstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
