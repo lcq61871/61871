@@ -1,0 +1,17 @@
+{
+    "name": "byxiaopeng脚本订阅",
+    "desc": "无",
+    "date": "2021-11-19 11:11:11",
+    "author": "https://github.com/byxiaopeng/myscripts",
+    "list": 
+    [
+	{"name":"御果园","type":"cron","time":"9 9 * * *","job":{"type":"runjs","target":"hhttps://raw.githubusercontent.com/byxiaopeng/myscripts/main/ygyapp.js"},"running":true},
+	{"name":"鑫广","type":"cron","time":"9 9,15 * * *","job":{"type":"runjs","target":"https://raw.githubusercontent.com/byxiaopeng/myscripts/main/xgapp.js"},"running":true},
+	{"name":"苏汇","type":"cron","time":"9 9,15 * * *","job":{"type":"runjs","target":"https://raw.githubusercontent.com/byxiaopeng/myscripts/main/shapp.js"},"running":true},
+	{"name":"千熙","type":"cron","time":"9 9,15 * * *","job":{"type":"runjs","target":"https://raw.githubusercontent.com/byxiaopeng/myscripts/main/qxapp.js"},"running":true},
+	{"name":"鸿答","type":"cron","time":"9 9,15 * * *","job":{"type":"runjs","target":"https://raw.githubusercontent.com/byxiaopeng/myscripts/main/hdapp.js"},"running":true},
+	{"name":"口袋庄园","type":"cron","time":"9 9 * * *","job":{"type":"runjs","target":"https://raw.githubusercontent.com/byxiaopeng/myscripts/main/kdzyapp.js"},"running":true},
+	{"name":"景宁百狮","type":"cron","time":"9 9 * * *","job":{"type":"runjs","target":"https://raw.githubusercontent.com/byxiaopeng/myscripts/main/njbsapp.js"},"running":true}, 
+	{"name":"蚁从","type":"cron","time":"9 9 * * *","job":{"type":"runjs","target":"https://raw.githubusercontent.com/byxiaopeng/myscripts/main/yclyapp.js"},"running":true}
+	]
+}
