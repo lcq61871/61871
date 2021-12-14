@@ -1,0 +1,27 @@
+{
+    "id": "Lemon.app.sub",
+    "name": "Lemon脚本订阅",
+    "author": "@Lemon",
+    "repo": "https://github.com/leafxcy/JavaScript.git",
+    "apps": [{
+        "id": "jrttjsb",
+        "name": "今日头条极速版",
+        "keys": ["jrttjsbHeader"],
+        "settings": [{
+            "id": "xgcount",
+            "name": "账号个数",
+            "val": "1",
+            "type": "number",
+            "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
+        }, {
+            "id": "jrttjsbHeader",
+            "name": "今日头条极速版Header",
+            "val": "",
+            "type": "text",
+        }],
+        "icons": [
+            "https://is3-ssl.mzstatic.com/image/thumb/Purple126/v4/34/dd/2c/34dd2cbf-90c4-b8f9-3d7e-b7ab62b4d986/source/60x60bb.jpg",
+            "https://is3-ssl.mzstatic.com/image/thumb/Purple126/v4/34/dd/2c/34dd2cbf-90c4-b8f9-3d7e-b7ab62b4d986/source/60x60bb.jpg"],
+        "author": "@Lemon",
+    }]
+}
