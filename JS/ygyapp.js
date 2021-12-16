@@ -1,4 +1,5 @@
 /*
+御果园
 脚本兼容: QuantumultX, Surge, Loon, JSBox, Node.js
 注册地址：https://www.yoo-woo.com/#/register
 ygyPhone:手机号#密码
