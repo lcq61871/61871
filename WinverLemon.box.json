@@ -13,15 +13,6 @@
     "repo": "https://github.com/leafxcy/JavaScript/blob/main/jrttjsb.js",
     "icons": ["https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/jrtt-mini.png", "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/jrtt.png"],
     "script": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jrttjsb.js"
-  },
-  {
-    "id": "ydd",
-    "name": "看点宝/阅多多/悦看点",
-    "keys": ["yddCookie"],
-    "author": "@leafxcy",
-    "repo": "https://github.com/leafxcy/JavaScript/blob/main/ydd.js",
-    "icons": ["https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/ydd.png", "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/ydd.png"],
-    "script": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/ydd.js"
   }
  ]
 }
