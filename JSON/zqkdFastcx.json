@@ -1,8 +1,7 @@
 {
-  "name": "中青看点极速版（快应用）重写订阅",
+  "name": "中青看点极速版（快应用）",
   "author": "elecV2p",
   "mitmhost": ["user.youth.cn"],
-  "note": "中青极速（快应用）",
   "rewrite": 
   [
     {
