@@ -1,0 +1,31 @@
+{
+  "name": "中青看点极速版（快应用）定时任务订阅",
+  "desc": "无",
+  "date": "2022-01-05 10:21:08",
+  "author": "https://t.me/tom_210120",
+  "resource": "",
+  "list": 
+  [
+    {
+      "name": "中青极速（快应用）文章",
+      "type": "cron",
+      "time": "25 8-22 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/zqkdFast/zqkdFast_read.js"
+      }
+    },
+    {
+     "name": "中青极速（快应用）看看赚",
+      "type": "cron",
+      "time": "45 9 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/zqkdFast/zqkdFast_kkz.js"
+      }
+    }
+
+  ]
+}
