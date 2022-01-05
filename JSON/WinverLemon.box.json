@@ -237,6 +237,16 @@
    "id": "zqkdFast_shareRead",
    "name": "中青极速（快应用）分享阅读",
    "keys": ["zqkdFastCookie","zqkdFastShareNum"],
+   "settings": 
+   [
+    {
+   "id": "zqkdFastShareNum",
+   "name": "阅读次数",
+   "val": "5",
+   "type": "number",
+   "desc": "设置被阅读的次数，一天最多10次"
+    }
+   ], 
    "repo": "https://github.com/leafxcy/JavaScript/blob/main/zqkdFast/zqkdFast_shareRead.js",
    "script": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/zqkdFast/zqkdFast_shareRead.js",
    "icons": ["https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/zqkd.png","https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/zqkd.png"],
