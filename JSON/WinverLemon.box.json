@@ -253,7 +253,7 @@
    "script": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/zqkdFast/zqkdFast_shareRead.js"
   },
   { 
-   "id": "zqkdFast_shareRead",
+   "id": "zqkdFast_daily",
    "name": "中青极速（快应用）PK，抽奖",
    "keys": ["zqkdFastCookie"], 
    "repo": "https://github.com/leafxcy/JavaScript/blob/main/zqkdFast/zqkdFast_daily.js",
@@ -262,7 +262,7 @@
    "script": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/zqkdFast/zqkdFast_daily.js"
   },
   { 
-   "id": "zqkdFast_shareRead",
+   "id": "zqkdFast_reward",
    "name": "中青极速（快应用）签到、每日奖励",
    "keys": ["zqkdFastSignBody","zqkdFastRewardBody"], 
    "repo": "https://github.com/leafxcy/JavaScript/blob/main/zqkdFast/zqkdFast_reward.js",
