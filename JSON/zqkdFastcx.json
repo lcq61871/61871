@@ -16,6 +16,18 @@
       "enable": false,
       "note": "中青极速（快应用）看看赚"
     },
+    {
+      "match": "https://user.youth.cn/FastApi/Task/sign",
+      "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/zqkdFast/zqkdFast_reward.js",
+      "enable": false,
+      "note": "中青极速（快应用）签到"
+    },
+    {
+      "match": "https://user.youth.cn/FastApi/CommonReward/toGetReward",
+      "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/zqkdFast/zqkdFast_reward.js",
+      "enable": false,
+      "note": "中青极速（快应用）奖励"
+    }
     
   ]
 }

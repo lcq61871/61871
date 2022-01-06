@@ -11,7 +11,8 @@
       "type": "cron",
       "time": "25 8-22 * * *",
       "running": true,
-      "job": {
+      "job": 
+      {
         "type": "runjs",
         "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/zqkdFast/zqkdFast_read.js"
       }
@@ -21,7 +22,8 @@
       "type": "cron",
       "time": "45 9 * * *",
       "running": true,
-      "job": {
+      "job": 
+      {
         "type": "runjs",
         "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/zqkdFast/zqkdFast_kkz.js"
       }
@@ -31,9 +33,32 @@
       "type": "cron",
       "time": "10 7 * * *",
       "running": true,
-      "job": {
+      "job": 
+      {
         "type": "runjs",
         "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/zqkdFast/zqkdFast_shareRead.js"
+      }
+    },
+    {
+     "name": "中青极速（快应用）PK，抽奖",
+      "type": "cron",
+      "time": "5,35 8-20 * * *",
+      "running": true,
+      "job": 
+      {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/zqkdFast/zqkdFast_daily.js"
+      }
+    },
+    {
+     "name": "中青极速（快应用）签到、每日奖励",
+      "type": "cron",
+      "time": "10 22 * * *",
+      "running": true,
+      "job": 
+      {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/zqkdFast/zqkdFast_reward.js"
       }
     }
 
