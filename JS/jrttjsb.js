@@ -39,7 +39,7 @@ let httpResult //global buffer
 let host = 'i.snssdk.com'
 let hostname = 'https://' + host
 
-let userAgent = ($.isNode() ? process.env.jrttjsbUA : $.getdata('jrttjsbUA')) || 'Dalvik/2.1.0 (Linux; U; Android 7.1.2; VOG-AL10 Build/HUAWEIVOG-AL10) NewsArticle/8.2.8 tt-ok/3.10.0.2';
+let userAgent = ($.isNode() ? process.env.jrttjsbUA : $.getdata('jrttjsbUA')) || 'NewsLite 8.5.8 rv:8.5.8.20 (iPhone; iOS 14.7.1; zh_CN) Cronet';
 let userAgentArr = []
 let userHeader = ($.isNode() ? process.env.jrttjsbHeader : $.getdata('jrttjsbHeader')) || '';
 let userHeaderArr = []
@@ -545,7 +545,7 @@ async function QuerySleepStatus() {
 //睡觉醒来
 async function SleepStop() {
     let caller = printCaller()
-    let url = `${hostname}/luckycat/lite/v1/sleep/stop/?aid=35&update_version_code=85221&device_platform=iphone&&device_type=iPhone13,2`
+    let url = `${hostname}/api/news/feed/v78/?aid=35&update_version_code=85820&device_platform=iphone&&device_type=iPhone7`
     let urlObject = populatePostUrl(url)
     await httpPost(urlObject,caller)
     let result = httpResult;
