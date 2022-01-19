@@ -1,0 +1,58 @@
+{
+ "name": "中青看点极速版定时任务订阅",
+ "author": "WinverLemon",
+ "date": "2022-01-19 20:25:08",
+ "list": 
+ [
+  {
+   "name": "中青极速版文章",
+   "type": "cron",
+   "time": "18 9 * * *",
+   "job": 
+    {
+     "type": "runjs",
+     "target": "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JS/zq_speed/zq_speed_read.js"
+    }
+  },
+  {
+   "name": "中青极速版宝箱",
+   "type": "cron",
+   "time": "0 21 * * *",
+   "job": 
+    {
+     "type": "runjs",
+     "target": "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JS/zq_speed/zq_speed_box.js"
+    }
+  },
+  {
+   "name": "中青极速版签到",
+   "type": "cron",
+   "time": "0 8 * * *",
+   "job": 
+    {
+     "type": "runjs",
+     "target": "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JS/zq_speed/zq_speed_qd.js"
+    }
+  },
+  {
+   "name": "中青极速版提现",
+   "type": "cron",
+   "time": "30 22 * * *",
+   "job": 
+    {
+     "type": "runjs",
+     "target": "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JS/zq_speed/zq_speed_tx.js"
+    }
+  },
+  {
+   "name": "中青极速版看看赚",
+   "type": "cron",
+   "time": "30 12 * * *",
+   "job": 
+    {
+     "type": "runjs",
+     "target": "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JS/zq_speed/zq_speed_kkz.js"
+    }
+  }
+ ]
+}

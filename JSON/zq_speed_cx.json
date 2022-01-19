@@ -1,0 +1,44 @@
+{
+ "name": "中青极速版重写订阅",
+ "author": "elecV2p",
+ "mitmhost": ["user.youth.cn"],
+ "rewrite": 
+  [
+   {
+    "match": "https://user.youth.cn/v1/user/userinfo.json",
+    "target": "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JS/zq_speed/zq_speed_ck.js",
+    "enable": true, 
+    "note": "中青看点极速版-CK"
+   },
+   {
+    "match": "https://user.youth.cn/FastApi/CommonReward/toGetReward.json",
+    "target": "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JS/zq_speed/zq_speed_box.js",
+    "enable": true, 
+    "note": "中青看点极速版-宝箱"
+   },
+   {
+    "match": "https://user.youth.cn/FastApi/Task/sign.json",
+    "target": "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JS/zq_speed/zq_speed_qd.js",
+    "enable": true, 
+    "note": "中青看点极速版-签到"
+   },
+   {
+    "match": "https://user.youth.cn/v1/article/detail.json",
+    "target": "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JS/zq_speed/zq_speed_read.js",
+    "enable": true, 
+    "note": "中青看点极速版-阅读文章"
+   },
+   {
+    "match": "https://user.youth.cn/v1/Withdraw/wechat.json",
+    "target": "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JS/zq_speed/zq_speed_tx.js",
+    "enable": true, 
+    "note": "中青看点极速版-提现"
+   },
+   {
+    "match": "https://user.youth.cn/v1/Nameless/adlickstart.json",
+    "target": "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JS/zq_speed/zq_speed_kkz.js",
+    "enable": true, 
+    "note": "中青看点极速版-看看赚"
+   }
+  ]
+}
