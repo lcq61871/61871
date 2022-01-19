@@ -15,9 +15,9 @@ const notify = $.isNode() ? require('./sendNotify') : '';
 message = ""
 
 
-let zqspeedbody= $.isNode() ? (process.env.zqspeedbody ? process.env.zqspeedbody : "") : ($.getdata('zqspeedbody') ? $.getdata('zqspeedbody') : "")
-let zqspeedbodyArr = []
-let zqspeedbodys = ""
+let zqspeedwzbody= $.isNode() ? (process.env.zqspeedwzbody ? process.env.zqspeedwzbody : "") : ($.getdata('zqspeedwzbody') ? $.getdata('zqspeedwzbody') : "")
+let zqspeedwzbodyArr = []
+let zqspeedwzbodys = ""
 
 
 
@@ -30,20 +30,20 @@ const wzheader = {
 }
 
 
-if (zqspeedbody) {
-    if (zqspeedbody.indexOf("&") == -1) {
-        zqspeedbodyArr.push(zqspeedbody)
-    } else if (zqspeedbody.indexOf("&") > -1) {
-        zqspeedbodys = zqspeedbody.split("&")
-    } else if (process.env.zqspeedbody && process.env.zqspeedbody.indexOf('&') > -1) {
-        zqspeedbodyArr = process.env.zqspeedbody.split('&');
+if (zqspeedwzbody) {
+    if (zqspeedwzbody.indexOf("&") == -1) {
+        zqspeedwzbodyArr.push(zqspeedwzbody)
+    } else if (zqspeedwzbody.indexOf("&") > -1) {
+        zqspeedwzbodys = zqspeedwzbody.split("&")
+    } else if (process.env.zqspeedwzbody && process.env.zqspeedwzbody.indexOf('&') > -1) {
+        zqspeedwzbodyArr = process.env.zqspeedwzbody.split('&');
         console.log(`您选择的是用"&"隔开\n`)
     }
 } else if($.isNode()) {
     var fs = require("fs");
-    zqspeedbody = fs.readFileSync("zqspeedbody.txt", "utf8");
-    if (zqspeedbody !== `undefined`) {
-        zqspeedbodys = zqspeedbody.split("\n");
+    zqspeedwzbody = fs.readFileSync("zqspeedwzbody.txt", "utf8");
+    if (zqspeedwzbody !== `undefined`) {
+        zqspeedwzbodys = zqspeedwzbody.split("\n");
     } else {
         $.msg($.name, '【提示】请点击文章获取body，再跑一次脚本', '不知道说啥好', {
             "open-url": "给您劈个叉吧"
@@ -51,24 +51,24 @@ if (zqspeedbody) {
         $.done()
     }
 }
-Object.keys(zqspeedbodys).forEach((item) => {
-    if (zqspeedbodys[item] && !zqspeedbodys[item].startsWith("#")) {
-        zqspeedbodyArr.push(zqspeedbodys[item])
+Object.keys(zqspeedwzbodys).forEach((item) => {
+    if (zqspeedwzbodys[item] && !zqspeedwzbodys[item].startsWith("#")) {
+        zqspeedwzbodyArr.push(zqspeedwzbodys[item])
     }
 })
 
 !(async () => {
     if (typeof $request !== "undefined") {
-     getzqspeedbody()
+     getzqspeedwzbody()
 
      $.done()
  }else {
 
-        console.log(`共${zqspeedbodyArr.length}个阅读body`)
-        for (let k = 0; k < zqspeedbodyArr.length; k++) {
+        console.log(`共${zqspeedwzbodyArr.length}个阅读body`)
+        for (let k = 0; k < zqspeedwzbodyArr.length; k++) {
             // $.message = ""
-            zqspeedbody1 = zqspeedbodyArr[k];
-            // console.log(`${zqspeedbody1}`)
+            zqspeedwzbody1 = zqspeedwzbodyArr[k];
+            // console.log(`${zqspeedwzbody1}`)
             console.log(`--------中青看点极速版第 ${k + 1} 次阅读任务执行中--------\n`)
             await wzjl()
             await $.wait(30000);
@@ -93,7 +93,7 @@ Object.keys(zqspeedbodys).forEach((item) => {
     .finally(() => $.done())
 
 
-function getzqspeedbody() {
+function getzqspeedwzbody() {
     if ($request.url.match(/\/user.youth.cn\/v1\/article\/detail.json/)) {
           bodyVal1 = $request.url.split('?')[1]
           bodyVal = bodyVal1.split('&source')[0]
@@ -101,19 +101,19 @@ function getzqspeedbody() {
 
             console.log(bodyVal)
 
-        if (zqspeedbody) {
-            if (zqspeedbody.indexOf(bodyVal) > -1) {
+        if (zqspeedwzbody) {
+            if (zqspeedwzbody.indexOf(bodyVal) > -1) {
                 $.log("此阅读请求已存在，本次跳过")
-            } else if (zqspeedbody.indexOf(bodyVal) == -1) {
-                zqspeedbodys = zqspeedbody + "&" + bodyVal;
-                $.setdata(zqspeedbodys, 'zqspeedbody');
-                $.log(`${$.name}获取阅读: 成功, zqspeedbodys: ${bodyVal}`);
-                bodys = zqspeedbodys.split("&")
+            } else if (zqspeedwzbody.indexOf(bodyVal) == -1) {
+                zqspeedwzbodys = zqspeedwzbody + "&" + bodyVal;
+                $.setdata(zqspeedwzbodys, 'zqspeedwzbody');
+                $.log(`${$.name}获取阅读: 成功, zqspeedwzbodys: ${bodyVal}`);
+                bodys = zqspeedwzbodys.split("&")
                  $.msg($.name, "获取第" + bodys.length + "个阅读请求: 成功🎉", ``)
             }
         } else {
-            $.setdata(bodyVal, 'zqspeedbody');
-            $.log(`${$.name}获取阅读: 成功, zqspeedbodys: ${bodyVal}`);
+            $.setdata(bodyVal, 'zqspeedwzbody');
+            $.log(`${$.name}获取阅读: 成功, zqspeedwzbodys: ${bodyVal}`);
             $.msg($.name, `获取第一个阅读请求: 成功🎉`, ``)
         }
     }else if ($request.url.match(/\/user.youth.cn\/v\?timestamp/)) {
@@ -121,19 +121,19 @@ function getzqspeedbody() {
         bodyVal = bodyVal1.split('&')[1]
           console.log(bodyVal)
 
-      if (zqspeedbody) {
-          if (zqspeedbody.indexOf(bodyVal) > -1) {
+      if (zqspeedwzbody) {
+          if (zqspeedwzbody.indexOf(bodyVal) > -1) {
               $.log("此阅读请求已存在，本次跳过")
-          } else if (zqspeedbody.indexOf(bodyVal) == -1) {
-              zqspeedbodys = zqspeedbody + "&" + bodyVal;
-              $.setdata(zqspeedbodys, 'zqspeedbody');
-              $.log(`${$.name}获取阅读: 成功, zqspeedbodys: ${bodyVal}`);
-              bodys = zqspeedbodys.split("&")
+          } else if (zqspeedwzbody.indexOf(bodyVal) == -1) {
+              zqspeedwzbodys = zqspeedwzbody + "&" + bodyVal;
+              $.setdata(zqspeedwzbodys, 'zqspeedwzbody');
+              $.log(`${$.name}获取阅读: 成功, zqspeedwzbodys: ${bodyVal}`);
+              bodys = zqspeedwzbodys.split("&")
                $.msg($.name, "获取第" + bodys.length + "个阅读请求: 成功🎉", ``)
           }
       } else {
-          $.setdata(bodyVal, 'zqspeedbody');
-          $.log(`${$.name}获取阅读: 成功, zqspeedbodys: ${bodyVal}`);
+          $.setdata(bodyVal, 'zqspeedwzbody');
+          $.log(`${$.name}获取阅读: 成功, zqspeedwzbodys: ${bodyVal}`);
           $.msg($.name, `获取第一个阅读请求: 成功🎉`, ``)
       }
     }
@@ -143,7 +143,7 @@ function getzqspeedbody() {
 function wzjl(timeout = 0) {
     return new Promise((resolve) => {
         let url = {
-            url : 'https://user.youth.cn/FastApi/article/complete.json?'+zqspeedbody1+'&app_version=2.4.5',
+            url : 'https://user.youth.cn/FastApi/article/complete.json?'+zqspeedwzbody1+'&app_version=2.4.5',
             headers : wzheader,
             }//xsgbody,}
         $.get(url, async (err, resp, data) => {

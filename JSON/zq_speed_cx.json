@@ -26,7 +26,7 @@
     "match": "https://user.youth.cn/v1/article/detail.json",
     "target": "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JS/zq_speed/zq_speed_read.js",
     "enable": true, 
-    "note": "中青看点极速版-阅读文章"
+    "note": "中青看点极速版-文章"
    },
    {
     "match": "https://user.youth.cn/v1/Withdraw/wechat.json",
