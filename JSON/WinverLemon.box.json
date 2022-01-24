@@ -109,7 +109,7 @@
      "desc": "推送以及通知控制在什么分钟段，可设置0-59,默认0到10"
     }
    ],
-   "repo": "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JS/gqsl.js",
+   "repo": "https://github.com/WinverLemon/Lemon/blob/main/JS/gqsl.js",
    "icons": ["https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/tom.png", "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/tom.png"],
    "script": "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JS/gqsl.js"
   },
@@ -117,16 +117,15 @@
    "id": "jztt",
    "name": "九章头条",
    "keys": ["jzttToken"],
-   "repo": "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JS/jztt.js",
+   "repo": "https://github.com/leafxcy/JavaScript/blob/main/jztt.js",
    "icons": ["https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/tom.png", "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/tom.png"],
-   "script": "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JS/jztt.js"
+   "script": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jztt.js"
   },
   { 
    "id": "zq_speed_box",
    "name": "中青看点极速版-宝箱",
    "keys": ["zqspeedbox"],
    "repo": "https://github.com/WinverLemon/Lemon/blob/main/JS/zq_speed/zq_speed_box.js",
-   "script": "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JS/zq_speed/zq_speed_box.js",
    "icons": ["https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/zqkd.png","https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/zqkd.png"],
    "script": "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JS/zq_speed/zq_speed_box.js"
   },
@@ -135,7 +134,6 @@
    "name": "中青看点极速版-签到",
    "keys": ["zqspeedck"],
    "repo": "https://github.com/WinverLemon/Lemon/blob/main/JS/zq_speed/zq_speed_qd.js",
-   "script": "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JS/zq_speed/zq_speed_qd.js",
    "icons": ["https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/zqkd.png","https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/zqkd.png"],
    "script": "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JS/zq_speed/zq_speed_qd.js"
   },
@@ -144,7 +142,6 @@
    "name": "中青看点极速版-文章",
    "keys": ["zqspeedwzbody"],
    "repo": "https://github.com/WinverLemon/Lemon/blob/main/JS/zq_speed/zq_speed_read.js",
-   "script": "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JS/zq_speed/zq_speed_read.js",
    "icons": ["https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/zqkd.png","https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/zqkd.png"],
    "script": "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JS/zq_speed/zq_speed_read.js"
   },
@@ -153,7 +150,6 @@
    "name": "中青看点极速版-提现",
    "keys": ["zqspeedtx"],
    "repo": "https://github.com/WinverLemon/Lemon/blob/main/JS/zq_speed/zq_speed_tx.js",
-   "script": "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JS/zq_speed/zq_speed_tx.js",
    "icons": ["https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/zqkd.png","https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/zqkd.png"],
    "script": "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JS/zq_speed/zq_speed_tx.js"
   },
@@ -162,7 +158,6 @@
    "name": "中青看点极速版-看看赚",
    "keys": ["zqspeedkkz"],
    "repo": "https://github.com/WinverLemon/Lemon/blob/main/JS/zq_speed/zq_speed_kkz.js",
-   "script": "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JS/zq_speed/zq_speed_kkz.js",
    "icons": ["https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/zqkd.png","https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/zqkd.png"],
    "script": "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JS/zq_speed/zq_speed_kkz.js"
   }
