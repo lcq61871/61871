@@ -121,6 +121,14 @@
    "icons": ["https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/tom.png", "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/tom.png"],
    "script": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jztt.js"
   },
+  {
+   "id": "kkd",
+   "name": "快看点",
+   "keys": ["kkdheader", "kkdcookie","kkdsign", "kkdheader2", "kkdcookie2","kkdsign2", "kkdheader3", "kkdcookie3","kkdsign3", "kkdheader4", "kkdcookie4","kkdsign4", "kkdheader5", "kkdcookie5","kkdsign5", "kkdheader6", "kkdcookie6","kkdsign6"],
+   "repo": "https://github.com/Ariszy/Private-Script/blob/master/Scripts/kkd.js",
+   "icons": ["https://raw.githubusercontent.com/Ariszy/Private-Script/master/img/kkd-mini.png", "https://raw.githubusercontent.com/Ariszy/Private-Script/master/img/kkd.png"],
+   "script": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/kkd.js"
+  },
   { 
    "id": "zq_speed_box",
    "name": "中青看点极速版-宝箱",
