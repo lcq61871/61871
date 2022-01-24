@@ -129,6 +129,14 @@
    "icons": ["https://raw.githubusercontent.com/Ariszy/Private-Script/master/img/kkd-mini.png", "https://raw.githubusercontent.com/Ariszy/Private-Script/master/img/kkd.png"],
    "script": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/kkd.js"
   },
+  {
+   "id": "kfx",
+   "name": "卡夫享",
+   "keys": ["kfxtoken"],
+   "repo": "https://github.com/leafxcy/JavaScript/blob/main/kfx.js",
+   "icons": ["https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/kfx.jpg", "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/kfx.jpg"],
+   "script": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/kfx.js"
+  },
   { 
    "id": "zq_speed_box",
    "name": "中青看点极速版-宝箱",
