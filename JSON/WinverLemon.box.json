@@ -140,7 +140,7 @@
   {
    "id": "wbtc",
    "name": "58同城",
-   "keys": ["wbtcCookie"],
+   "keys": ["wbtcCookie","wbtcUA"],
    "repo": "https://github.com/leafxcy/JavaScript/blob/main/58tc.js",
    "icons": ["https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/wbtc.jpg", "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/wbtc.jpg"],
    "script": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/58tc.js"
