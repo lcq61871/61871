@@ -39,6 +39,14 @@
    "icons": ["https://raw.githubusercontent.com/Ariszy/Private-Script/master/img/elecv2p-mini.png", "https://raw.githubusercontent.com/Ariszy/Private-Script/master/img/elecv2p.png"]
   },
   {
+   "id": "iQIYI",
+   "name": "爱奇艺",
+   "keys": ["CookieQY"],
+   "script": "https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js",
+   "repo": "https://github.com/NobyDa/Script/blob/master/iQIYI-DailyBonus/iQIYI.js",
+   "icons": ["https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/iQIYI.png", "https://raw.githubusercontent.com/NobyDa/mini/master/Color/iQIYI.png"]
+  },
+  {
    "id": "jrttjsb",
    "name": "今日头条极速版",
    "keys": ["jrttjsbHeader"],
