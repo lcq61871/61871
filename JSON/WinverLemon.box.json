@@ -138,14 +138,6 @@
    "script": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/kkd.js"
   },
   {
-   "id": "kfx",
-   "name": "卡夫享",
-   "keys": ["kfxtoken"],
-   "repo": "https://github.com/leafxcy/JavaScript/blob/main/kfx.js",
-   "icons": ["https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/kfx.jpg", "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/kfx.jpg"],
-   "script": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/kfx.js"
-  },
-  {
    "id": "wbtc",
    "name": "58同城",
    "keys": ["wbtcCookie","wbtcUA"],
