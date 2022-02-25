@@ -46,14 +46,6 @@
    "repo": "https://github.com/NobyDa/Script/blob/master/iQIYI-DailyBonus/iQIYI.js",
    "icons": ["https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/iQIYI.png", "https://raw.githubusercontent.com/NobyDa/mini/master/Color/iQIYI.png"]
   },
-  {
-   "id": "jrttjsb",
-   "name": "今日头条极速版",
-   "keys": ["jrttjsbHeader"],
-   "repo": "https://github.com/leafxcy/JavaScript/blob/main/jrttjsb.js",
-   "icons": ["https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/jrtt-mini.png", "https://raw.githubusercontent.com/WinverLemon/Lemon/main/JPG/jrtt.png"],
-   "script": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jrttjsb.js"
-  }, 
   {  
    "id": "gqsl",
    "name": "广汽三菱",
